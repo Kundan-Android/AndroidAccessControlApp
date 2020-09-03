@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="@color/colorBlue"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Hello,"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="There!"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:maxLines="1"
+        android:layout_marginEnd="15dp"
+        style="@style/autoscroll"
+        android:ellipsize="end"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="323dp"
+        android:layout_height="63dp"
+        android:text="@string/this_app_is_a_sample_app_to_illustrate_cidaas_communication_with_access_control_devices"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/secular_one"
+        android:text="IDENTIFY DOOR TO ACCESS"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/openBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bluecircle"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Scan"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <TextView
+        android:id="@+id/listBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bluecircle"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="List"
+        android:textAllCaps="true"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toEndOf="@+id/openBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Scan the barcode available at the door which you wish to access"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openBtn"
+        app:layout_constraintVertical_bias="0.233"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:id="@+id/lastLogin"
+        android:textColor="@color/gray_btn_bg_pressed_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <!-- <androidx.cardview.widget.CardView
+         android:id="@+id/card_view_home"
+         android:layout_width="335dp"
+         android:layout_height="279dp"
+         android:layout_gravity="center"
+         app:cardCornerRadius="10dp"
+         app:cardElevation="10dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.423"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/textView3"
+         app:layout_constraintVertical_bias="0.158">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="0.5"
+                 android:src="@drawable/ic_arrow_forward" />
+
+             <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight="0.5"
+                     android:layout_gravity="center"
+                     android:fontFamily="sans-serif-medium"
+                     android:gravity="center"
+                     android:textColor="@color/colorBlack"
+                     android:text="@string/identify_door_to_access"
+                     android:textSize="22sp" />
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="0.05"
+                 android:layout_marginStart="25dp"
+                 android:layout_marginEnd="25dp"
+                 android:gravity="center"
+                 android:background="@drawable/line"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginEnd="20dp"
+                 android:text="@string/scan_the_barcode_available_at_the_door_which_you_wish_to_access"
+                 android:gravity="center_horizontal"
+                 android:layout_marginTop="10dp"/>
+         </LinearLayout>
+
+
+     </androidx.cardview.widget.CardView>
+
+ -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<resources>
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0"/>
+            <enum name="y" value="1"/>
+            <enum name="z" value="2"/>
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotXX" format="fraction"/>
+        <attr name="pivotYY" format="fraction" />
+    </declare-styleable>
+
+
+    <!-- PIN View-->
+    <declare-styleable name="MarkerView">
+        <attr name="marker_color" format="color" />
+        <attr name="marker_textsize" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OtpViewTheme">
+        <attr name="otpViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="OtpView">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension"  />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="viewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="hideLineWhenFilled" format="boolean" />
+    </declare-styleable>
+</resources>

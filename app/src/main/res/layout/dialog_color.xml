@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/dialog_background">
+
+    <RelativeLayout
+        android:id="@+id/color_dialog_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="@string/choose_the_color_for_your_pattern"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" android:fontFamily="@font/source_sans_pro_semibold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_dialog_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fab_margin">
+
+        <RelativeLayout
+            android:id="@+id/color_dialog_relative1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/RedButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/redround"
+                android:elevation="50dp" />
+
+            <Button
+                android:id="@+id/BlueButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/RedButton"
+                android:background="@drawable/blueroundbutton" />
+
+            <Button
+                android:id="@+id/GreenButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/BlueButton"
+                android:background="@drawable/greenround" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/color_dialog_relative2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/color_dialog_relative1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin">
+
+            <Button
+                android:id="@+id/YellowButton"
+                android:layout_width="50dp"
+
+                android:layout_height="50dp"
+
+                android:background="@drawable/yellowround" />
+
+            <Button
+                android:id="@+id/OrangeButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/YellowButton"
+                android:background="@drawable/orangeround" />
+
+            <Button
+                android:id="@+id/PinkButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@id/OrangeButton"
+                android:background="@drawable/pinkroundbutton" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

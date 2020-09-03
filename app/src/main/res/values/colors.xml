@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorprimary">#ff8900</color>
+    <color name="white">#fff</color>
+    <color name="colorPrimaryDark">#f57c00</color>
+    <color name="colorAccent">#ff0</color>
+    <color name="colorBlack">#000000</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="very_light_gray">#46DFD4D4</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="greenoutercircle">#73bf43</color>
+    <color name="greeninnercircle">#8ed95e</color>
+
+    <color name="colorGreen">#008000</color>
+    <color name="colorRed">#FE0000</color>
+    <color name="colorYellow">#FFFE01</color>
+    <!--<color name="colorBlue">#0099ff</color>-->
+    <color name="colorBlue">#3574f6</color>
+    <color name="colorMagenta">#FE1492</color>
+    <!--<color name="fadedcircle">#4db8ff</color>-->
+    <color name="fadedcircle">#5aa2fb</color>
+
+
+    <color name="colorBackground">#F0F0F0</color>
+    <color name="colorLightGray">#60000000</color>
+    <color name="link_blue_color"> #0000FF</color>
+    <item name="blue" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#CE93D8</item>
+    <item name="pink" type="color">#F48FB1</item>
+    <item name="green" type="color">#CCFF99FF</item>
+    <item name="orange" type="color">#FFEECE80</item>
+    <item name="red" type="color">#EF9A9A</item>
+    <item name="dark_blue" type="color">#90CAF9</item>
+    <item name="dark_green" type="color">#FF80CBC4</item>
+    <item name="amber" type="color">#66EE99CC</item>
+    <item name="lime" type="color">#FFCC9966</item>
+    <item name="greyish" type="color">#B0BEC5</item>
+    <item name="light_purple" type="color">#e1bee7</item>
+    <item name="orange_yellow" type="color">#CC99CC</item>
+    <item name="pinkish" type="color">#f48fb1</item>
+
+</resources>

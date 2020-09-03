@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+   <!-- <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.NoActionBar">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <com.widas.demo_ac.CameraSourcePreview
+        android:id="@+id/cameraSourcePreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/colorBlue"
+        app:lottie_fileName="scanner.json"
+        app:lottie_loop="true" />
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/empty_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:srcCompat="@drawable/ic_empty" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_state"
+            android:layout_margin="10dp"
+            android:padding="3dp"
+            android:text="@string/camera_access_settings" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />-->
+</RelativeLayout>
+

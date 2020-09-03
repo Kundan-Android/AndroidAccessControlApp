@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/colorWhite"
+    android:elevation="@dimen/fab_margin"
+    app:cardBackgroundColor="@color/colorWhite"
+    card_view:cardElevation="15dp"
+    app:cardCornerRadius="8dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/fab_margin"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/source_sans_pro_semibold"/>
+
+                <ImageView
+                    android:id="@+id/img_copy_cont"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/home_tv_name"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/vd_content_copy" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/home_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="@string/email" />
+
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_time_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="@string/created_on"
+                    android:textSize="12dp"
+                     />
+
+                <TextView
+                    android:id="@+id/home_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:textColor="@color/colorGreen"
+                    android:layout_toRightOf="@+id/tv_time_lbl"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_toLeftOf="@+id/imgarrow">
+
+            <ImageView
+                android:id="@+id/img_provider"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="5dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/vd_face" />
+
+            <ProgressBar
+                android:id="@+id/progress_state"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:indeterminate="false"
+                android:progress="0"
+                android:visibility="gone"
+                android:progressDrawable="@drawable/progress" />
+
+            <TextView
+                android:id="@+id/lbl_count"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignStart="@+id/progress_state"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="30"
+                android:visibility="gone"
+                android:paddingStart="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/vd_arrow_right_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+

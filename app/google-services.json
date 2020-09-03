@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "202611405782",
+    "firebase_url": "https://demoaccesscontrol.firebaseio.com",
+    "project_id": "demoaccesscontrol",
+    "storage_bucket": "demoaccesscontrol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202611405782:android:9ccbf615d4b61df40aea77",
+        "android_client_info": {
+          "package_name": "com.widas.demo_ac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202611405782-sdfqmualv79eoh5ij4tbbb17ooj4gdg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.widas.demo_ac",
+            "certificate_hash": "6aa004222513824664313cd36f1611cc3576b1b1"
+          }
+        },
+        {
+          "client_id": "202611405782-7519ve4017lh8nhurqoo81q4suht8m4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-_jfgd7BzomQJYxHUDAJ_HYZh-RO9yLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202611405782-7519ve4017lh8nhurqoo81q4suht8m4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
